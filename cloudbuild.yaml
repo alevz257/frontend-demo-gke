@@ -7,7 +7,7 @@ steps:
   args:
   - run
   - --filename=depl.yaml
-  - --image=gcr.io/$PROJECT_ID/frontend:$SHORT_SHA
+  - --image=gcr.io/$PROJECT_ID/frontend:${SHORT_SHA}
   - --location=${_LOCATION}
   - --cluster=${_CLUSTER}
 images: ['gcr.io/$PROJECT_ID/frontend:$SHORT_SHA']
