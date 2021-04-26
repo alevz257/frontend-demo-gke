@@ -1,9 +1,10 @@
 steps:
 #deploy
-- name: "gcr.io/cloud-builders/gke-deploy"
+- name: "gcr.io/cloud-builders/kubectl"
   args:
-  - run
-  - --filename=kubernetes-manifests.yaml
-  - --location=${_LOCATION}
-  - --cluster=${_CLUSTER}
-images: ['gcr.io/$PROJECT_ID/frontend:$SHORT_SHA']
+  - apply
+  - -f
+  - kubernetes-manifests.yaml
+  env:
+  - 'CLOUDSDK_COMPUTE_ZONE=${_LOCATION}'
+  - 'CLOUDSDK_CONTAINER_CLUSTER=${_CLUSTER}'
