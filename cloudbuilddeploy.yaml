@@ -1,0 +1,9 @@
+steps:
+#deploy
+- name: "gcr.io/cloud-builders/gke-deploy"
+  args:
+  - run
+  - --filename=kubernetes-manifests.yaml
+  - --location=${_LOCATION}
+  - --cluster=${_CLUSTER}
+images: ['gcr.io/$PROJECT_ID/frontend:$SHORT_SHA']
