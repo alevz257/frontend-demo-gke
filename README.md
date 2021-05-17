@@ -1,5 +1,5 @@
 # frontend
-# test12345
+# trigger for deployment
 Run the following command to restore dependencies to `vendor/` directory:
 
     dep ensure --vendor-only
