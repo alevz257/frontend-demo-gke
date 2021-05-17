@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: gcr.io/alevz-project-1-310308/frontend:v1.4
+          image: gcr.io/alevz-demo-1/frontend:v1.4
           ports:
           - containerPort: 8080
           readinessProbe:
