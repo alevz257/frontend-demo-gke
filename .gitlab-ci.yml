@@ -81,7 +81,7 @@ push to cloudbuild:
   script:
     - echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
     - gcloud auth activate-service-account --key-file ${HOME}/gcloud-service-key.json
-    - gcloud components install kubectl
+    - sudo apt-get install kubectl
     - gcloud config set project ${PROJECT_ID}
     - gcloud container clusters get-credentials alevz-demo-1-gke --zone asia-southeast2-a --project alevz-demo-1
     - kubectl apply -f kubernetes-manifest.yaml
