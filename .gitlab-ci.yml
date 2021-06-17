@@ -62,6 +62,14 @@ stages:
   - build
   - test
   - push to cloudbuild
+  - deploy
+  - review
+  - dast
+  - staging
+  - canary
+  - production
+  - performance
+  - cleanup
 
 push to cloud build:
   image: google/cloud-sdk:latest
