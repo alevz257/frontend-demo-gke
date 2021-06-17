@@ -75,9 +75,9 @@ stages:
   - performance
   - cleanup
 
-push to cloud build:
+push to cloudbuild:
   image: google/cloud-sdk:latest
-  stage: push to cloud build
+  stage: push to cloudbuild
   script:
     - echo $GCLOUD_SERVICE_KEY > ${HOME}/gcloud-service-key.json
     - gcloud auth activate-service-account --key-file ${HOME}/gcloud-service-key.json
