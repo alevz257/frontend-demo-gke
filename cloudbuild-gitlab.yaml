@@ -10,4 +10,4 @@ steps:
   - --image=gcr.io/$PROJECT_ID/frontend:gitlab
   - --location=${_LOCATION}
   - --cluster=${_CLUSTER}
-images: ['gcr.io/$PROJECT_ID/frontend:$SHORT_SHA']
+images: ['gcr.io/$PROJECT_ID/frontend:gitlab']
