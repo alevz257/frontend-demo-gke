@@ -1,5 +1,5 @@
 # frontend
-# deploy trigger 1a
+# deploy trigger
 Run the following command to restore dependencies to `vendor/` directory:
 
     dep ensure --vendor-only
