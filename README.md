@@ -1,5 +1,5 @@
 # frontend
-# deploy trigger gitlab 1
+# deploy trigger gitlab
 Run the following command to restore dependencies to `vendor/` directory:
 
     dep ensure --vendor-only
