@@ -4,9 +4,6 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Starting Build'
-        apt-get install kubectl
-        gcloud container clusters get-credentials alevz-demo-1-gke --zone asia-southeast2-a --project alevz-demo-1
-        kubectl get nodes
       }
     }
 
