@@ -2,12 +2,6 @@ pipeline {
   agent any
   stages {
     stage('Build') {
-      agent {
-        docker {
-          image 'google/cloud-sdk:latest'
-          reuseNode true
-        }
-      }
       steps {
         echo 'Starting Build'
       }
