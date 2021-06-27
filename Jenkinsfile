@@ -1,7 +1,7 @@
 pipeline {
   agent {
-    node {
-      label 'gce'
+    docker {
+      image 'google/cloud-sdk:latest'
     }
 
   }
