@@ -2,6 +2,9 @@ pipeline {
   agent any
   stages {
     stage('Set Original Workload') {
+      when {
+        branch 'deploy'
+      }
       steps {
         echo 'Kubectl original online-boutique'
         sh '''gcloud config set project $PROJECT_ID
@@ -13,6 +16,9 @@ kubectl apply -f kubernetes-manifests.yaml'''
     }
 
     stage('Build Container and Push to GKE') {
+      when {
+        branch 'master'
+      }
       steps {
         sh '''gcloud config set project $PROJECT_ID
 gcloud auth list
