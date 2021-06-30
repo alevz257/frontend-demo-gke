@@ -183,7 +183,7 @@ header .h-control :-moz-placeholder {
 header .navbar.sub-navbar {
   height: 60px;
   /* for test */
-  background-color: #dc3545;
+  background-color: #121212;
   /*background-color: #111111;*/
   font-size: 15px;
   color: #b4b2bb;
