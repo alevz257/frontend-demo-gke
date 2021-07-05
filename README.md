@@ -1,5 +1,5 @@
 # frontend
-# deploy trigger gitlab 1a
+# deploy trigger jenkins-deploy
 Run the following command to restore dependencies to `vendor/` directory:
 
     dep ensure --vendor-only
