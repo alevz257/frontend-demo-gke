@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  options {
+    quietPeriod(300)
+  }
   triggers {
     pollSCM('*/1 * * * *')
   }
