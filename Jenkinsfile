@@ -1,7 +1,7 @@
 pipeline {
   agent any
   triggers {
-    pollSCM('*/5 * * * *')
+    pollSCM('*/1 * * * *')
   }
   stages {
     stage('Set Original Workload') {
